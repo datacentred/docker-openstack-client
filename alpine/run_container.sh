@@ -5,8 +5,10 @@ apk add --update --no-cache python py-pip git python-dev libffi libffi-dev \
     openssl openssl-dev build-base iputils bash curl linux-headers
 
 # Install client
-git clone https://github.com/openstack/python-openstackclient.git /root/client --depth 1
+git clone https://github.com/openstack/python-openstackclient.git /root/client
 cd /root/client
+git fetch --tags
+git checkout tags/2.3.0
 pip install --no-cache-dir .
 
 # Install tools
