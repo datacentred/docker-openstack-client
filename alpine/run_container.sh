@@ -8,7 +8,7 @@ apk add --update --no-cache python py-pip git python-dev libffi libffi-dev \
 git clone https://github.com/openstack/python-openstackclient.git /root/client
 cd /root/client
 git fetch --tags
-git checkout tags/2.3.0
+git checkout tags/2.3.0 -b v2.3.0
 pip install --no-cache-dir .
 
 # Install tools
