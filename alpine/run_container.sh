@@ -9,7 +9,7 @@ git clone https://github.com/openstack/python-openstackclient.git /root/client
 cd /root/client
 git fetch --tags
 git checkout tags/2.3.0 -b v2.3.0
-pip install --no-cache-dir .
+pip install 'python-openstackclient==2.6.0'
 
 # Install tools
 curl -sSL https://raw.githubusercontent.com/gbraad/openstack-tools/master/stack -o /sbin/stack
